@@ -1,1 +1,22 @@
 // Начните писать стили здесь
+@import "settings.scss";
+@import "fonts.scss";
+@import "mixin.scss";
+@import "blocks/body.scss";
+@import "blocks/example.scss";
+@import "blocks/footer.scss";
+@import "blocks/functions.scss";
+@import "blocks/global.scss";
+@import "blocks/header.scss";
+@import "blocks/how-work.scss";
+@import "blocks/main.scss";
+@import "blocks/main-banner.scss";
+@import "blocks/map.scss";
+@import "blocks/nav.scss";
+@import "blocks/page.scss";
+// form
+@import "blocks/request.scss";
+//catalog
+@import "blocks/catalog.scss";
+@import "blocks/additional.scss";
+@import "blocks/additional-gift.scss";

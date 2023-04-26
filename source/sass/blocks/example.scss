@@ -1,0 +1,52 @@
+@import "../settings.scss";
+
+.example {
+  margin: 0 auto;
+  padding: 25px 20px 40px;
+  background-color: $example-background-color;
+}
+
+.example__title {
+  margin: 0 0 40px;
+  padding: 0;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $text-color-2;
+}
+
+.example__description {
+  margin: 0 0 20px;
+  font-family: $main-font-2;
+}
+
+.example__properties {
+  margin: 0 0 20px;
+}
+
+.example__properties-title {
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: $text-color-2;
+}
+
+.example__properties-subtitle {
+  margin: 0;
+  font-family: $main-font-2;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+}
+
+.example__properties-item {
+  &--result {
+    margin: 0 auto 20px;
+    max-width: fit-content;
+    font-size: 14px;
+    line-height: 20px;
+    color: $text-color-2;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

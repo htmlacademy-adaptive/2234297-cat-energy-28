@@ -1,0 +1,26 @@
+@import "../settings.scss";
+
+.nav__toggle {
+  display: inline-block;
+}
+
+.nav__menu {
+  list-style-type: none;
+}
+
+.nav__menu-item {
+  padding: 22px 0 24px;
+}
+
+.nav__menu-item-link {
+  text-decoration: none;
+}
+
+.nav__menu-item-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: $text-color-2;
+  text-align: center;
+  text-transform: uppercase;
+}

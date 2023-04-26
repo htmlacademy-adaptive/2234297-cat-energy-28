@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
   <title>Каталог | HTML Academy: Кэт энерджи</title>
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="body">
 <header class="header">
   <div class="header__logo">
-    <img class="header__logo-img" src="img/logo-mobile.svg" width="34" height="37" alt="Кэт энерджи">
+    <a href="index.html" class="header__logo-link">
+      <img class="header__logo-img" src="img/logo-mobile.svg" width="34" height="37" alt="Кэт энерджи">
+    </a>
   </div>
   <div class="header__slogan">
     <img class="header__logo-img " src="img/slogan.svg" width="101" height="18" alt="Кэт энерджи">
@@ -16,18 +21,24 @@
     <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <ul class="nav__menu">
       <li class="nav__menu-item">
-        <span>
-          Главная
-        </span>
-      </li>
-      <li class="nav__menu-item nav__menu-item--active">
-        <a href="catalog.html">
-          каталог продукции
+        <a href="index.html" class="nav__menu-item-link">
+          <span class="nav__menu-item-text">
+            Главная
+          </span>
         </a>
       </li>
       <li class="nav__menu-item">
-        <a href="form.html">
-          подбор программы
+        <a href="catalog.html" class="nav__menu-item-link">
+          <span class="nav__menu-item-text">
+            каталог продукции
+          </span>
+        </a>
+      </li>
+      <li class="nav__menu-item nav__menu-item--active">
+        <a href="form.html" class="nav__menu-item-link">
+          <span class="nav__menu-item-text">
+            подбор программы
+          </span>
         </a>
       </li>
     </ul>
@@ -129,16 +140,16 @@
           </a>
           <ul class="catalog__properties">
             <li class="catalog__properties-item">
-              <span class="catalog__properties-title">Масса</span>
-              <span class="catalog__properties-subtitle">500 г</span>
+              <span class="catalog__properties-item-title">Масса</span>
+              <span class="catalog__properties-item-subtitle">500 г</span>
             </li>
             <li class="catalog__properties-item">
-              <span class="catalog__properties-title">Вкус</span>
-              <span class="catalog__properties-subtitle">Гречка</span>
+              <span class="catalog__properties-item-title">Вкус</span>
+              <span class="catalog__properties-item-subtitle">Гречка</span>
             </li>
             <li class="catalog__properties-item">
-              <span class="catalog__properties-title">Цена</span>
-              <span class="catalog__properties-subtitle">400 ₽</span>
+              <span class="catalog__properties-item-title">Цена</span>
+              <span class="catalog__properties-item-subtitle">400 ₽</span>
             </li>
           </ul>
           <a class="catalog__item-btn" href="form.html">заказать</a>
@@ -186,7 +197,7 @@
           <a class="catalog__item-btn" href="form.html">заказать</a>
         </li>
         <li class="catalog__item catalog__item--more">
-          <span class="catalog__item-title--more">Показать еще 100500 товаров</span>
+          <span class="catalog__item-title catalog__item-title--more">Показать еще 100500 товаров</span>
           <span class="catalog__item-description--more">На самом деле вкусов гораздо больше!</span>
           <a class="catalog__item-btn--more" href="catalog.html/#all">показать все</a>
         </li>
@@ -199,47 +210,41 @@
       <ul class="additional__products">
         <li class="additional__products-item">
           <div class="additional__products-item-title">Сахарозаменитель</div>
-          <ul class="additional__properties">
-            <li class="additional__properties-item">
-              <span class="additional__properties-item-title">1 упаковка (100 г)</span>
-              <span class="additional__properties-item-subtitle">200 ₽</span>
-              <a class="additional__properties-item-btn" href="form.html">заказать</a>
-            </li>
-          </ul>
+          <div class="additional__property">
+            <span class="additional__property-title">1 упаковка (100 г)</span>
+            <span class="additional__property-subtitle">200 ₽</span>
+            <a class="additional__property-btn" href="form.html">заказать</a>
+          </div>
         </li>
         <li class="additional__products-item">
           <div class="additional__products-item-title">Питьевая вода</div>
-          <ul class="additional__properties">
-            <li class="additional__properties-item">
-              <span class="additional__properties-item-title">5 литров</span>
-              <span class="additional__properties-item-subtitle">50 ₽</span>
-              <a class="additional__properties-item-btn" href="form.html">заказать</a>
-            </li>
-          </ul>
+          <div class="additional__property">
+            <span class="additional__property-title">5 литров</span>
+            <span class="additional__property-subtitle">50 ₽</span>
+            <a class="additional__property-btn" href="form.html">заказать</a>
+          </div>
         </li>
         <li class="additional__products-item">
           <div class="additional__products-item-title">Молоко</div>
-          <ul class="additional__properties">
-            <li class="additional__properties-item">
-              <span class="additional__properties-item-title">1 литр</span>
-              <span class="additional__properties-item-subtitle">100 ₽</span>
-              <a class="additional__properties-item-btn" href="form.html">заказать</a>
-            </li>
-          </ul>
+          <div class="additional__property">
+            <span class="additional__property-title">1 литр</span>
+            <span class="additional__property-subtitle">100 ₽</span>
+            <a class="additional__property-btn" href="form.html">заказать</a>
+          </div>
         </li>
         <li class="additional__products-item">
           <div class="additional__products-item-title">Витамины</div>
-          <ul class="additional__properties">
-            <li class="additional__properties-item">
-              <span class="additional__properties-item-title">1 упаковка (30 г)</span>
-              <span class="additional__properties-item-subtitle">300 ₽</span>
-              <a class="additional__properties-item-btn" href="form.html">заказать</a>
-            </li>
-          </ul>
+          <div class="additional__property">
+            <span class="additional__property-title">1 упаковка (30 г)</span>
+            <span class="additional__property-subtitle">300 ₽</span>
+            <a class="additional__property-btn" href="form.html">заказать</a>
+          </div>
         </li>
       </ul>
       <div class="additional__gift">
-        <h2 class="additional__gift-title">Закажите все и получите чехол для кота в подарок!</h2>
+        <div class="additional__gift-container">
+          <h2 class="additional__gift-title">Закажите все и получите чехол для кота в подарок!</h2>
+        </div>
       </div>
     </div>
   </section>
@@ -254,7 +259,9 @@
 </main>
 <footer class="footer">
   <div class="footer__logo">
-    <img class="footer__logo-img" src="img/footer-logo.svg" width="128" height="24" alt="Cat Energy">
+    <a href="index.html" class="footer__logo-link">
+      <img class="footer__logo-img" src="img/footer-logo.svg" width="128" height="24" alt="Cat Energy">
+    </a>
   </div>
   <div class="footer__social">
     <ul class="footer__social-list">

@@ -1,0 +1,54 @@
+@import "../settings.scss";
+
+.functions {
+  margin: 0 auto;
+  padding: 0 20px 20px;
+}
+
+.functions__container {
+  margin: 0;
+  padding: 0;
+}
+
+.functions__item {
+  margin: 0 0 20px;
+  padding-top: 30px;
+  padding-bottom: 18px;
+  background-color: $main-color-3;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.functions__item-title {
+  max-width: fit-content;
+  margin: 0 auto 29px 91px;
+  padding: 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  color: $text-color-2;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.functions__item-description {
+  margin: 0 0 10px;
+  padding: 0 33px 0 20px;
+  font-family: $main-font-2;
+
+  &:last-of-type {
+    margin-bottom: 38px;
+  }
+}
+
+.functions__item-btn {
+  margin: 0 0 0 19px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 16px;
+  color: $text-color-2;
+  text-align: center;
+  text-transform: uppercase;
+}

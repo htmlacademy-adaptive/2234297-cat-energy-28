@@ -1,0 +1,45 @@
+@import "../settings.scss";
+
+.additional__container {
+  margin: 0 auto;
+  padding: 25px 20px 0;
+}
+
+.additional__title {
+  margin: 0 0 36px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: $text-color-2;
+}
+
+.additional__products {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.additional__products-item {
+  margin: 0;
+  padding: 13px 0 19px;
+}
+
+.additional__products-item-title {
+  margin: 0 0 13px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: $text-color-4;
+  text-transform: uppercase;
+}
+
+.additional__property {
+  margin-bottom: 15px;
+}
+
+.additional__property-title,
+.additional__property-subtitle {
+  margin: 0;
+  font-family: $main-font-2;
+  line-height: 14px;
+}
