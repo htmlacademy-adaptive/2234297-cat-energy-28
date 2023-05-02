@@ -1,13 +1,41 @@
 .nav__toggle {
   display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .nav__menu {
+  margin: 0;
+  padding: 0;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .nav__menu-item {
   padding: 22px 0 24px;
+
+  @media (min-width: $tablet-width) {
+    padding: 18px 0;
+    margin-right: 34px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 18px 0;
+    margin-right: 37px;
+  }
 }
 
 .nav__menu-item-link {

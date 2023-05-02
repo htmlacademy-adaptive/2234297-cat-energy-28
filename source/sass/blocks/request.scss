@@ -1,12 +1,28 @@
 .request__container {
   margin: 0 auto;
   padding: 27px 20px 32px;
+
+  @media (min-width: $tablet-width) {
+    padding: 65px 30px 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 74px 110px 82px;
+  }
 }
 
 .request__title {
   @include page-heading-style;
-  margin-bottom: 37px;
+  margin: 0 0 37px;
   color: $text-color-2;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .request__subtitle {
@@ -18,10 +34,47 @@
   &:last-of-type {
     margin-bottom: 39px;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .request__form {
   margin: 0;
+}
+
+.request__form-cont {
+  @media (min-width: $tablet-width) {
+    padding: 0 37px 71px 41px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 69px;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 80px;
+    row-gap: 0;
+  }
+}
+
+.request__form-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 78px;
+  }
 }
 
 .request__form-fieldset {
@@ -31,22 +84,54 @@
 
   &--cat-data {
     padding-bottom: 24px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+    }
   }
 
   &--course-type {
     padding: 22px 0 19px;
+
+    @media (min-width: $desktop-width) {
+      min-width: 568px;
+    }
   }
 
   &--contacts {
     padding: 26px 0 24px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 36px 65px 38px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 0 67px 0;
+    }
   }
 
   &--comment {
     padding-bottom: 23px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 37px 65px 39px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 0 67px 0;
+    }
   }
 
   &--extra {
     padding-bottom: 34px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 135px 0 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+    }
   }
 }
 
@@ -70,6 +155,33 @@
   }
 }
 
+.request__form-group {
+  margin: 0 0 14px 0;
+  display: flex;
+  align-items: center;
+  column-gap: 13px;
+
+  @media (min-width: $desktop-width) {
+    min-width: 570px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--contacts {
+    column-gap: 10px;
+
+    @media (min-width: $tablet-width) {
+      column-gap: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+    }
+  }
+}
+
 .request__form-label {
   font-size: 16px;
   text-transform: uppercase;
@@ -88,11 +200,16 @@
 }
 
 .request__form-field {
+  width: 100%;
   margin: 0;
   font-family: $main-font-1;
   font-size: 16px;
   color: $text-color-1;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 1px;
+  }
 
   &::placeholder {
     color: $text-color-1;
@@ -107,15 +224,38 @@
   }
 }
 
-.request__form-purpose,
-.request__form-additional {
+.request__form-purpose {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.request__form-purpose-item,
+.request__form-additional {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 61px;
+  }
+}
+
 .request__form-additional-item {
+  max-width: fit-content;
+}
+
+.request__form-purpose-item {
   margin-bottom: 13px;
 
   &:last-child {
@@ -123,14 +263,32 @@
   }
 }
 
+.request__form-btn-cont {
+  display: flex;
+  flex-direction: row;
+  gap: 84px;
+  margin: 22px 0 9px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
 .request__form-btn {
-  margin-bottom: 21px;
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 1px;
+  }
 }
 
 .request__form-caption {
+  max-width: fit-content;
   margin: 0;
   font-family: $main-font-2;
   line-height: 16px;
   color: $text-color-2;
-  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    min-width: 128px;
+    padding-left: 2px;
+  }
 }

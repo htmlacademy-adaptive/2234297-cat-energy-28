@@ -1,11 +1,25 @@
 .functions {
   margin: 0 auto;
   padding: 0 20px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 45px 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 82px 110px 71px;
+  }
 }
 
 .functions__container {
   margin: 0;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+  }
 }
 
 .functions__item {
@@ -16,6 +30,19 @@
 
   &:last-of-type {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 30px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 570px;
+    margin: 0;
   }
 }
 

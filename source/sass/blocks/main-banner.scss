@@ -1,4 +1,4 @@
-.main-banner__container {
+.main-banner {
   position: relative;
   margin: 0 auto;
   padding: 27px 20px 20px;
@@ -16,6 +16,38 @@
     background-size: cover;
     z-index: -1;
   }
+
+  @media (min-width: $tablet-width) {
+    min-height: 440px;
+    padding: 62px 30px 0 31px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    padding: 29px 110px 54px;
+
+    &::before {
+      top: 0;
+      right: 0;
+      left: 50%;
+      width: 720px;
+      display: block;
+    }
+  }
+}
+
+.main-banner__container {
+  @media (min-width: $tablet-width) {
+    padding: 0 0 0 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 0 80px;
+  }
 }
 
 .main-banner__title {
@@ -23,6 +55,12 @@
   margin: 0 auto 25px;
   color: $main-color-1;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 414px;
+    margin: 0 0 41px;
+    color: $text-color-2;
+  }
 }
 
 .main-banner__description {
@@ -35,6 +73,12 @@
   &:last-of-type {
     margin-bottom: 29px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 49px;
+    color: $text-color-2;
+    text-align: start;
+  }
 }
 
 .main-banner__btn {
@@ -46,4 +90,19 @@
 .main-banner__img {
   margin: 0 auto 3px;
   background: transparent;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 32px;
+    left: 40%;
+    right: 0;
+    margin: 0;
+  }
 }

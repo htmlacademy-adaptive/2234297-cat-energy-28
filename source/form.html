@@ -12,10 +12,8 @@
   <div class="header__logo">
     <a href="index.html" class="header__logo-link">
       <img class="header__logo-img" src="img/logo-mobile.svg" width="34" height="37" alt="Кэт энерджи">
+      <img class="header__logo-img " src="img/slogan.svg" width="101" height="18" alt="Кэт энерджи">
     </a>
-  </div>
-  <div class="header__slogan">
-    <img class="header__logo-img " src="img/slogan.svg" width="101" height="18" alt="Кэт энерджи">
   </div>
   <nav class="nav">
     <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -50,51 +48,55 @@
       <h2 class="request__title">Подбор программы</h2>
       <div class="request__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</div>
       <form class="request__form" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="request__form-fieldset request__form-fieldset--cat-data">
-          <div class="request__form-group">
-            <label class="request__form-label" for="name">ИМЯ:*</label>
-            <input class="request__form-field" type="text" id="name" name="name" placeholder="барсик" required>
-          </div>
-          <div class="request__form-group">
-            <label class="request__form-label" for="weight">Вес (кг):*</label>
-            <input class="request__form-field" type="number" id="weight" name="weight" placeholder="7" required>
-          </div>
-          <div class="request__form-group">
-            <label class="request__form-label" for="age">Возраст (лет):</label>
-            <input class="request__form-field" type="number" id="age" name="age" placeholder="7" required>
-          </div>
-        </fieldset>
-        <fieldset class="request__form-fieldset request__form-fieldset--course-type">
-          <ul class="request__form-purpose">
-            <li class="request__form-purpose-item">
-              <label class="request__form-purpose-control">
-                <input class="request__form-purpose-input" type="radio" name="purpose" value="weight-loss" checked>
-                <span class="request__form-purpose-label">похудение</span>
-              </label>
-            </li>
-            <li class="request__form-purpose-item">
-              <label class="request__form-purpose-control">
-                <input class="request__form-purpose-input" type="radio" name="purpose" value="mass-gain">
-                <span class="request__form-purpose-label">Набор массы</span>
-              </label>
-            </li>
-            <li class="request__form-purpose-item">
-              <label class="request__form-purpose-control">
-                <input class="request__form-purpose-input" type="radio" name="purpose" value="help">
-                <span class="request__form-purpose-label">Не знаю (Нужен ваш совет)</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="request__form-cont">
+          <fieldset class="request__form-fieldset request__form-fieldset--cat-data">
+            <div class="request__form-group">
+              <label class="request__form-label" for="name">ИМЯ:*</label>
+              <input class="request__form-field" type="text" id="name" name="name" placeholder="барсик" required>
+            </div>
+            <div class="request__form-group">
+              <label class="request__form-label" for="weight">Вес (кг):*</label>
+              <input class="request__form-field" type="number" id="weight" name="weight" placeholder="7" required>
+            </div>
+            <div class="request__form-group">
+              <label class="request__form-label" for="age">Возраст (лет):</label>
+              <input class="request__form-field" type="number" id="age" name="age" placeholder="7" required>
+            </div>
+          </fieldset>
+          <fieldset class="request__form-fieldset request__form-fieldset--course-type">
+            <ul class="request__form-purpose">
+              <li class="request__form-purpose-item">
+                <label class="request__form-purpose-control">
+                  <input class="request__form-purpose-input" type="radio" name="purpose" value="weight-loss" checked>
+                  <span class="request__form-purpose-label">похудение</span>
+                </label>
+              </li>
+              <li class="request__form-purpose-item">
+                <label class="request__form-purpose-control">
+                  <input class="request__form-purpose-input" type="radio" name="purpose" value="mass-gain">
+                  <span class="request__form-purpose-label">Набор массы</span>
+                </label>
+              </li>
+              <li class="request__form-purpose-item">
+                <label class="request__form-purpose-control">
+                  <input class="request__form-purpose-input" type="radio" name="purpose" value="help">
+                  <span class="request__form-purpose-label">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
         <fieldset class="request__form-fieldset request__form-fieldset--contacts">
           <div class="request__form-title request__form-title--contacts">Контактные данные (владельца кота)</div>
-          <div class="request__form-group">
-            <label class="request__form-label" for="email">Email:*</label>
-            <input class="request__form-field" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
-          </div>
-          <div class="request__form-">
-            <label class="request__form-label" for="phone">Телефон:*</label>
-            <input class="request__form-field" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+          <div class="request__form-inner">
+            <div class="request__form-group request__form-group--contacts">
+              <label class="request__form-label" for="email">Email:*</label>
+              <input class="request__form-field" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+            </div>
+            <div class="request__form-group request__form-group--contacts">
+              <label class="request__form-label" for="phone">Телефон:*</label>
+              <input class="request__form-field" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+            </div>
           </div>
         </fieldset>
         <fieldset class="request__form-fieldset request__form-fieldset--comment">
@@ -135,10 +137,12 @@
             </li>
           </ul>
         </fieldset>
-        <button class="request__form-btn" type="submit">
-          Отправить
-        </button>
-        <span class="request__form-caption">* — Обязательные поля</span>
+        <div class="request__form-btn-cont">
+          <button class="request__form-btn" type="submit">
+            Отправить
+          </button>
+          <span class="request__form-caption">* — Обязательные поля</span>
+        </div>
       </form>
     </div>
   </section>
@@ -149,6 +153,7 @@
         ул. Большая Конюшенная, д. 19/8<br> Санкт-Петербург
       </address>
     </div>
+    <div class="map__frame"></div>
   </section>
 </main>
 <footer class="footer">

@@ -2,6 +2,24 @@
   margin: 0 auto;
   padding: 25px 20px 40px;
   background-color: $example-background-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 43px 30px 100px 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px 75px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.example__cont {
+  @media (min-width: $desktop-width) {
+    max-width: 436px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .example__title {
@@ -20,6 +38,14 @@
 
 .example__properties {
   margin: 0 0 20px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    max-width: fit-content;
+    justify-content: flex-start;
+    column-gap: 42px;
+  }
 }
 
 .example__properties-title {
@@ -38,13 +64,43 @@
 }
 
 .example__properties-item {
-  &--result {
-    margin: 0 auto 20px;
+  max-width: 124px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 162px;
+  }
+}
+
+.example__inner {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    display: block;
+  }
+}
+
+.example__inner-subheading {
+  margin: 0 auto;
+  max-width: fit-content;
+  font-size: 14px;
+  line-height: 20px;
+  color: $text-color-2;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    max-width: 175px;
+  }
+
+  @media (min-width: $desktop-width) {
     max-width: fit-content;
-    font-size: 14px;
-    line-height: 20px;
-    color: $text-color-2;
-    text-align: center;
-    text-transform: uppercase;
   }
 }
