@@ -1,0 +1,22 @@
+.additional__gift {
+  margin: 0 auto;
+  padding: 35px 20px;
+}
+
+.additional__gift-container {
+  width: 280px;
+  height: 290px;
+  background-color: $main-color-2;
+  background-image: url("../../img/gift-background.jpg");
+  background-size: cover;
+}
+
+.additional__gift-title {
+  max-width: 162px;
+  margin: 0 auto;
+  font-family: $main-font-2;
+  font-size: 16px;
+  line-height: 20px;
+  color: $main-color-1;
+  text-align: center;
+}

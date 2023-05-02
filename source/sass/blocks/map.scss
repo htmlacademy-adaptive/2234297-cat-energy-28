@@ -1,0 +1,28 @@
+.map {
+  margin: 0 auto;
+  padding: 26px 0 0;
+
+  &--alter-background {
+    background-color: $main-color-3;
+  }
+}
+
+.map-banner {
+  margin: 0 20px 26px;
+}
+
+.map__banner-title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $text-color-3;
+  text-transform: uppercase;
+}
+
+.map__banner-address {
+  margin: 0;
+  font-family: $main-font-2;
+  font-size: 14px;
+  line-height: 20px;
+}
