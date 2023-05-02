@@ -1,6 +1,14 @@
 .how-work {
   margin: 0 auto;
   padding: 0 20px 49px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 47px 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px 69px;
+  }
 }
 
 .how-work__title {
@@ -10,6 +18,13 @@
   font-size: 36px;
   line-height: 40px;
   color: $text-color-2;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 37px;
+  }
 }
 
 .how-work__list {
@@ -23,6 +38,10 @@
 
   &:last-of-type {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 250px;
   }
 }
 
