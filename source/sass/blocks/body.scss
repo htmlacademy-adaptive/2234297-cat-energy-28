@@ -1,6 +1,6 @@
 .body {
-  width: 320px;
-  max-width: 1440px;
+  width: 100%;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -10,12 +10,4 @@
   line-height: 18px;
   background-color: $main-color-1;
   color: $text-color-1;
-
-  @media (min-width: $tablet-width) {
-    width: 769px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1440px;
-  }
 }
