@@ -43,10 +43,9 @@
 }
 
 .header__logo-link {
-  display: block;
+  display: flex;
   margin-bottom: 16px;
   max-width: fit-content;
-  max-height: 38px;
   padding-right: 40px;
 
   &--index {
@@ -63,5 +62,17 @@
 
   &:active {
     opacity: 0.6;
+  }
+}
+
+.header__logo-img {
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
   }
 }

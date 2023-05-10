@@ -208,14 +208,10 @@
 
 .example__interactive {
   position: relative;
+  margin: 0 auto;
   display: flex;
+  width: fit-content;
   justify-content: center;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 auto;
-    width: 560px;
-    height: 512px;
-  }
 }
 
 .example__interactive-item {
@@ -236,6 +232,11 @@
     clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
     width: 100%;
     object-position: right center;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
   }
 }
 
