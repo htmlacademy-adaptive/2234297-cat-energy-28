@@ -567,7 +567,7 @@
   left: 22px;
   content: "";
   background-color: inherit;
-  background-image: url("/source/img/main/cat-back-mobile-1.svg");
+  background-image: url("../img/main/cat-back-mobile-1.svg");
   background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
@@ -577,7 +577,7 @@
     right: 62px;
     width: 200px;
     height: 211px;
-    background-image: url("/source/img/main/cat-back-tablet-1.svg");
+    background-image: url("../img/main/cat-back-tablet-1.svg");
   }
 }
 @media (min-width: 1440px) {
@@ -587,7 +587,7 @@
     right: 0;
     width: 100px;
     height: 106px;
-    background-image: url("/source/img/main/cat-back-desktop-1.svg");
+    background-image: url("../img/main/cat-back-desktop-1.svg");
   }
 }
 .functions__item--weight-gain::before {
@@ -598,7 +598,7 @@
   left: 13px;
   content: "";
   background-color: inherit;
-  background-image: url("/source/img/main/cat-back-mobile-2.svg");
+  background-image: url("../img/main/cat-back-mobile-2.svg");
   background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
@@ -608,7 +608,7 @@
     left: 412px;
     width: 268px;
     height: 200px;
-    background-image: url("/source/img/main/cat-back-tablet-2.svg");
+    background-image: url("../img/main/cat-back-tablet-2.svg");
   }
 }
 @media (min-width: 1440px) {
@@ -618,7 +618,7 @@
     right: 0;
     width: 134px;
     height: 100px;
-    background-image: url("/source/img/main/cat-back-desktop-2.svg");
+    background-image: url("../img/main/cat-back-desktop-2.svg");
   }
 }
 @media (min-width: 768px) {
@@ -706,7 +706,7 @@
   width: 32px;
   height: 10px;
   background-color: inherit;
-  background-image: url("/source/img/main/guide-icon-arrow.svg");
+  background-image: url("../img/main/guide-icon-arrow.svg");
   background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
@@ -721,7 +721,7 @@
 
 .functions__item-btn:hover::after,
 .functions__item-btn:active::after {
-  background-image: url("/source/img/main/guide-icon-arrow-large.svg");
+  background-image: url("../img/main/guide-icon-arrow-large.svg");
 }
 
 .functions__item-btn-text {
@@ -893,7 +893,7 @@
   }
 }
 .how-work__item--nutrients::before {
-  background-image: url("/source/img/main/icon-leaf.svg");
+  background-image: url("../img/main/icon-leaf.svg");
   background-position: 15px 14px;
   background-repeat: no-repeat;
 }
@@ -903,7 +903,7 @@
   }
 }
 .how-work__item--powder::before {
-  background-image: url("/source/img/main/icon-boiling.svg");
+  background-image: url("../img/main/icon-boiling.svg");
   background-position: 17px 16px;
   background-repeat: no-repeat;
 }
@@ -913,7 +913,7 @@
   }
 }
 .how-work__item--meal::before {
-  background-image: url("/source/img/main/icon-eat.svg");
+  background-image: url("../img/main/icon-eat.svg");
   background-position: center 15px;
   background-repeat: no-repeat;
 }
@@ -923,7 +923,7 @@
   }
 }
 .how-work__item--time::before {
-  background-image: url("/source/img/main/icon-time.svg");
+  background-image: url("../img/main/icon-time.svg");
   background-position: center 15px;
   background-repeat: no-repeat;
 }
@@ -946,22 +946,22 @@
     row-gap: 31px;
   }
   .how-work__item:nth-child(1) {
-    background-image: url("/source/img/main/one.svg");
+    background-image: url("../img/main/one.svg");
     background-position: 127px 40px;
     background-repeat: no-repeat;
   }
   .how-work__item:nth-child(2) {
-    background-image: url("/source/img/main/two.svg");
+    background-image: url("../img/main/two.svg");
     background-position: 125px 38px;
     background-repeat: no-repeat;
   }
   .how-work__item:nth-child(3) {
-    background-image: url("/source/img/main/three.svg");
+    background-image: url("../img/main/three.svg");
     background-position: 124px 38px;
     background-repeat: no-repeat;
   }
   .how-work__item:nth-child(4) {
-    background-image: url("/source/img/main/four.svg");
+    background-image: url("../img/main/four.svg");
     background-position: 124px 40px;
     background-repeat: no-repeat;
   }
@@ -1008,14 +1008,14 @@
   width: 100%;
   height: 302px;
   background-color: #68b738;
-  background-image: url("/source/img/main/promo-background-mobile-1x.jpg");
+  background-image: url("../img/main/promo-background-mobile-1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .main-banner::before {
-    background-image: url("/source/img/main/promo-background-mobile-2x.jpg");
+    background-image: url("../img/main/promo-background-mobile-2x.jpg");
   }
 }
 @media (min-width: 768px) {
@@ -1037,12 +1037,12 @@
     display: block;
     width: 50%;
     min-height: 694px;
-    background-image: url("/source/img/main/promo-background-desktop-1x.jpg");
+    background-image: url("../img/main/promo-background-desktop-1x.jpg");
   }
 }
 @media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1440px) and (min-resolution: 2dppx) {
   .main-banner::before {
-    background-image: url("/source/img/main/promo-background-desktop-2x.jpg");
+    background-image: url("../img/main/promo-background-desktop-2x.jpg");
   }
 }
 
@@ -1291,7 +1291,7 @@
   display: block;
   width: 100vw;
   height: 400px;
-  background-image: url("/source/img/map.png");
+  background-image: url("../img/map.png");
   border: none;
 }
 @media (min-width: 768px) {
@@ -2018,7 +2018,7 @@
   left: 6px;
   width: 18px;
   height: 14px;
-  background-image: url("/source/img/form/checkbox-mark-mobile.svg");
+  background-image: url("../img/form/checkbox-mark-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
   content: "";
@@ -2029,7 +2029,7 @@
     left: 7px;
     width: 26px;
     height: 26px;
-    background-image: url("/source/img/form/checkbox-mark-tablet.svg");
+    background-image: url("../img/form/checkbox-mark-tablet.svg");
   }
 }
 
@@ -2393,7 +2393,7 @@
   height: 30px;
   margin-bottom: 23px;
   content: "";
-  background-image: url("/source/img/catalog/icon-plus-more.svg");
+  background-image: url("../img/catalog/icon-plus-more.svg");
   background-position: center;
   background-repeat: no-repeat;
   object-fit: contain;
@@ -2403,7 +2403,7 @@
     width: 60px;
     height: 60px;
     margin-bottom: 49px;
-    background-image: url("/source/img/catalog/icon-plus-more-tablet.svg");
+    background-image: url("../img/catalog/icon-plus-more-tablet.svg");
   }
 }
 
@@ -2791,26 +2791,26 @@
   justify-content: space-between;
   align-items: center;
   background-color: #68b738;
-  background-image: url("/source/img/catalog/gift-background-1x.jpg");
+  background-image: url("../img/catalog/gift-background-1x.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .additional__gift {
-    background-image: url("/source/img/catalog/gift-background-2x.jpg");
+    background-image: url("../img/catalog/gift-background-2x.jpg");
   }
 }
 .additional__gift::before {
   width: 78px;
   height: 80px;
   content: "";
-  background-image: url("/source/img/catalog/icon-gift-mobile.svg");
+  background-image: url("../img/catalog/icon-gift-mobile.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
   .additional__gift::before {
-    background-image: url("/source/img/catalog/icon-gift-tablet.svg");
+    background-image: url("../img/catalog/icon-gift-tablet.svg");
     width: 80px;
     height: 82px;
   }
@@ -2819,12 +2819,12 @@
   .additional__gift {
     padding: 57px 124px 61px 77px;
     flex-direction: row;
-    background-image: url("/source/img/catalog/gift-background-tablet-1x.jpg");
+    background-image: url("../img/catalog/gift-background-tablet-1x.jpg");
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
   .additional__gift {
-    background-image: url("/source/img/catalog/gift-background-tablet-2x.jpg");
+    background-image: url("../img/catalog/gift-background-tablet-2x.jpg");
   }
 }
 @media (min-width: 1440px) {
@@ -2833,12 +2833,12 @@
     padding: 56px 0 42px;
     margin: 0;
     flex-direction: column;
-    background-image: url("/source/img/catalog/gift-background-desktop-1x.jpg");
+    background-image: url("../img/catalog/gift-background-desktop-1x.jpg");
   }
 }
 @media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1440px) and (min-resolution: 2dppx) {
   .additional__gift {
-    background-image: url("/source/img/catalog/gift-background-desktop-2x.jpg");
+    background-image: url("../img/catalog/gift-background-desktop-2x.jpg");
   }
 }
 
