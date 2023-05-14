@@ -34,7 +34,7 @@
     left: 22px;
     content: "";
     background-color: inherit;
-    background-image: url("../../img/main/cat-back-mobile-1.svg");
+    background-image: url("../img/main/cat-back-mobile-1.svg");
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
@@ -43,7 +43,7 @@
       right: 62px;
       width: 200px;
       height: 211px;
-      background-image: url("../../img/main/cat-back-tablet-1.svg");
+      background-image: url("../img/main/cat-back-tablet-1.svg");
     }
 
     @media (min-width: $desktop-width) {
@@ -52,7 +52,7 @@
       right: 0;
       width: 100px;
       height: 106px;
-      background-image: url("../../img/main/cat-back-desktop-1.svg");
+      background-image: url("../img/main/cat-back-desktop-1.svg");
     }
   }
 
@@ -64,7 +64,7 @@
     left: 13px;
     content: "";
     background-color: inherit;
-    background-image: url("../../img/main/cat-back-mobile-2.svg");
+    background-image: url("../img/main/cat-back-mobile-2.svg");
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
@@ -73,7 +73,7 @@
       left: 412px;
       width: 268px;
       height: 200px;
-      background-image: url("../../img/main/cat-back-tablet-2.svg");
+      background-image: url("../img/main/cat-back-tablet-2.svg");
     }
 
     @media (min-width: $desktop-width) {
@@ -82,7 +82,7 @@
       right: 0;
       width: 134px;
       height: 100px;
-      background-image: url("../../img/main/cat-back-desktop-2.svg");
+      background-image: url("../img/main/cat-back-desktop-2.svg");
     }
   }
 
@@ -164,7 +164,7 @@
     width: 32px;
     height: 10px;
     background-color: inherit;
-    background-image: url("../../img/main/guide-icon-arrow.svg");
+    background-image: url("../img/main/guide-icon-arrow.svg");
     background-repeat: no-repeat;
   }
 
@@ -180,7 +180,7 @@
 
 .functions__item-btn:hover::after,
 .functions__item-btn:active::after {
-  background-image: url("../../img/main/guide-icon-arrow-large.svg");
+  background-image: url("../img/main/guide-icon-arrow-large.svg");
 }
 
 .functions__item-btn-text {
