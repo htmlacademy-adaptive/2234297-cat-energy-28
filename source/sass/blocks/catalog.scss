@@ -146,7 +146,7 @@
       height: 30px;
       margin-bottom: 23px;
       content: "";
-      background-image: url("../../img/catalog/icon-plus-more.svg");
+      background-image: url("../img/catalog/icon-plus-more.svg");
       background-position: center;
       background-repeat: no-repeat;
       object-fit: contain;
@@ -155,7 +155,7 @@
         width: 60px;
         height: 60px;
         margin-bottom: 49px;
-        background-image: url("../../img/catalog/icon-plus-more-tablet.svg");
+        background-image: url("../img/catalog/icon-plus-more-tablet.svg");
       }
     }
   }
@@ -216,10 +216,12 @@
 .catalog__item-img {
   @media (min-width: $tablet-width) {
     object-fit: contain;
+    width: 168px;
     height: 200px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 172px;
     height: 196px;
   }
 }

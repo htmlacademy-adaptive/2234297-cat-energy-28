@@ -64,7 +64,7 @@
   }
 
   &--nutrients::before {
-    background-image: url("../../img/main/icon-leaf.svg");
+    background-image: url("../img/main/icon-leaf.svg");
     background-position: 15px 14px;
     background-repeat: no-repeat;
 
@@ -74,7 +74,7 @@
   }
 
   &--powder::before {
-    background-image: url("../../img/main/icon-boiling.svg");
+    background-image: url("../img/main/icon-boiling.svg");
     background-position: 17px 16px;
     background-repeat: no-repeat;
 
@@ -84,7 +84,7 @@
   }
 
   &--meal::before {
-    background-image: url("../../img/main/icon-eat.svg");
+    background-image: url("../img/main/icon-eat.svg");
     background-position: center 15px;
     background-repeat: no-repeat;
 
@@ -94,7 +94,7 @@
   }
 
   &--time::before {
-    background-image: url("../../img/main/icon-time.svg");
+    background-image: url("../img/main/icon-time.svg");
     background-position: center 15px;
     background-repeat: no-repeat;
 
@@ -117,25 +117,25 @@
     row-gap: 31px;
 
     &:nth-child(1) {
-      background-image: url("../../img/main/one.png");
+      background-image: url("../img/main/one.svg");
       background-position: 127px 40px;
       background-repeat: no-repeat;
     }
 
     &:nth-child(2) {
-      background-image: url("../../img/main/two.png");
+      background-image: url("../img/main/two.svg");
       background-position: 125px 38px;
       background-repeat: no-repeat;
     }
 
     &:nth-child(3) {
-      background-image: url("../../img/main/three.png");
+      background-image: url("../img/main/three.svg");
       background-position: 124px 38px;
       background-repeat: no-repeat;
     }
 
     &:nth-child(4) {
-      background-image: url("../../img/main/four.png");
+      background-image: url("../img/main/four.svg");
       background-position: 124px 40px;
       background-repeat: no-repeat;
     }
