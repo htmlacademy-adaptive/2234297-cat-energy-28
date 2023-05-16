@@ -225,8 +225,15 @@
   height: fit-content;
   justify-content: center;
 
+  @media (min-width: $tablet-width) {
+    margin: 0 75px;
+  }
+
   @media (min-width: $desktop-width) {
-    margin: 0 0 0 auto;
+    margin: 0 0 10px auto;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
 
@@ -297,6 +304,7 @@
   z-index: 3;
   color: $button-icon-color-2;
   stroke: $button-icon-color-2;
+  transition: all 0.2s ease;
 }
 
 .example__interactive-btn:hover svg {
