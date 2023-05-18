@@ -44,16 +44,17 @@
 
 .header__logo-link {
   display: flex;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   max-width: fit-content;
   padding-right: 40px;
 
-  &--index {
-    margin-bottom: 17px;
+  @media (min-width: $tablet-width) {
+    transform: translateX(1px);
+    margin-bottom: 0;
   }
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 0;
+  @media (min-width: $desktop-width) {
+    transform: translate(0);
   }
 
   &:hover {
