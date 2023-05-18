@@ -8,7 +8,10 @@
   <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <title>Подбор программы | HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
 </head>
 <body class="body">
 <header class="header">
@@ -16,7 +19,8 @@
     <div class="header__logo">
       <a href="index.html" class="header__logo-link">
         <picture>
-          <source media="(min-width: 768px)" srcset="img/logo-adaptive.svg">
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
           <img class="header__logo-img" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип Cat Energy">
         </picture>
       </a>

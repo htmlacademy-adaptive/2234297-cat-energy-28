@@ -6,28 +6,12 @@
     transform: translateX(1px);
     position: relative;
     padding: 43px 0 98px;
-    background-color: transparent;
-
-    &::before {
-      position: absolute;
-      transform: translateX(-1px);
-      top: 57%;
-      left: 0;
-      z-index: -1;
-      width: 100%;
-      height: 43%;
-      content: "";
-      background-color: $example-background-color;
-    }
+    background-image: linear-gradient($main-color-1 57%, $example-background-color 57%);
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 0 75px;
-
-    &::before {
-      top: 23%;
-      height: 77%;
-    }
+    background-image: linear-gradient($main-color-1 23%, $example-background-color 23%);
   }
 }
 
@@ -276,6 +260,7 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  transition: all 0.2s ease;
 
   &::before {
     position: absolute;
@@ -288,6 +273,7 @@
     background-color: $button-icon-color-2;
     border: none;
     border-radius: 2px;
+    transition: all 0.2s ease;
   }
 }
 

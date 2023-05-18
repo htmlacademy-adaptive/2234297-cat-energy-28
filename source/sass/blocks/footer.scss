@@ -63,6 +63,7 @@
 
 .footer__logo-img {
   color: $text-color-3;
+  transition: all 0.2s ease;
 
   @media (min-width: $tablet-width) {
     width: 143px;
@@ -91,6 +92,7 @@
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
+  transition: all 0.2s ease;
 
   &:active {
     opacity: 0.3;
@@ -114,6 +116,7 @@
 
 .footer__copyright-img {
   color: $button-icon-color-2;
+  transition: all 0.2s ease;
 }
 
 .footer__copyright-link:hover .footer__copyright-img {
@@ -149,6 +152,10 @@
   @media (min-width: $tablet-width) {
     padding: 3px 0 0;
   }
+}
+
+.footer__social-item-link svg {
+  transition: all 0.2s ease;
 }
 
 .footer__social-item-link:hover svg {

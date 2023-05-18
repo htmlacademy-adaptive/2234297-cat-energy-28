@@ -276,6 +276,7 @@
   display: flex;
   align-items: center;
   column-gap: 13px;
+  transition: all 0.2s ease;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
@@ -322,6 +323,7 @@
   align-items: center;
   column-gap: 15px;
   cursor: pointer;
+  transition: all 0.2s ease;
 
   @media (min-width: $tablet-width) {
     column-gap: 20px;
@@ -337,11 +339,16 @@
   align-items: center;
   border: 1px solid $extra-color-2;
   border-radius: 50%;
+  transition: all 0.2s ease;
 
   @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
   }
+}
+
+.request__form-purpose-input {
+  transition: all 0.2s ease;
 }
 
 .request__form-purpose-input:checked + .request__form-purpose-mark::before {
@@ -377,6 +384,7 @@
   align-items: center;
   column-gap: 16px;
   cursor: pointer;
+  transition: all 0.2s ease;
 
   @media (min-width: $tablet-width) {
     column-gap: 20px;
@@ -400,11 +408,16 @@
   width: 30px;
   height: 30px;
   border: 1px solid $extra-color-2;
+  transition: all 0.2s ease;
 
   @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
   }
+}
+
+.request__form-additional-input {
+  transition: all 0.2s ease;
 }
 
 .request__form-additional-input:checked + .request__form-additional-mark::before {
@@ -441,6 +454,7 @@
   color: $text-color-1;
   text-transform: uppercase;
   border: 1px solid $extra-color-3;
+  transition: all 0.2s ease;
 
   &::placeholder {
     color: $text-color-1;
@@ -466,6 +480,7 @@
   top: 12px;
   right: 15px;
   color: $text-color-2;
+  transition: all 0.2s ease;
 
   @media (min-width: $tablet-width) {
     top: 16px;
@@ -485,6 +500,7 @@
   border: 1px solid $extra-color-3;
   text-transform: uppercase;
   resize: none;
+  transition: all 0.2s ease;
 
   &:placeholder {
     font-family: $main-font-1;
