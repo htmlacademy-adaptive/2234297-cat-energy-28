@@ -14,7 +14,7 @@
   <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
 </head>
 <body class="body">
-<header class="header">
+<header class="header header--nojs">
   <div class="header__container container">
     <div class="header__logo">
       <a href="index.html" class="header__logo-link">
@@ -26,8 +26,8 @@
       </a>
     </div>
     <nav class="nav nav--nojs">
-      <ul class="nav__menu">
-        <li class="nav__menu-item">
+      <ul class="nav__menu nav__menu--form">
+        <li class="nav__menu-item nav__menu-item--index">
           <a href="index.html" class="nav__menu-item-link">
             <span class="nav__menu-item-text">
               Главная
@@ -112,7 +112,7 @@
             </label>
             <label class="request__form-group request__form-group--contacts" for="phone">
               <span class="request__form-text">Телефон:*</span>
-              <input class="request__form-field request__form-field--with-icon" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+              <input class="request__form-field request__form-field--with-icon request__form-field--tel" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
               <svg class="request__form-icon" aria-hidden="true" focusable="false" width="20" height="20" fill="none">
                 <use href="img/sprite.svg#phone-icon"></use>
               </svg>
@@ -121,10 +121,8 @@
         </fieldset>
         <fieldset class="request__form-fieldset request__form-fieldset--comment request__form-fieldset--with-lines">
           <div class="request__form-title request__form-title--comment">Комментарий</div>
-          <div class="request__form-group">
-            <label for="message"></label>
-            <textarea class="request__form-field-textarea" id="message" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </div>
+          <label class="request__form-group request__form-group--comment" for="message"></label>
+          <textarea class="request__form-field-textarea" id="message" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="request__form-fieldset request__form-fieldset--extra request__form-fieldset--with-lines">
           <div class="request__form-title request__form-title--extra">Дополнительно</div>
@@ -173,10 +171,23 @@
       <div class="map__banner">
         <h2 class="map__banner-title">приглашаем к сотрудничеству дилеров!</h2>
         <address class="map__banner-address">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          <span class="map__banner-address-text">ул. Большая Конюшенная, д. 19/8</span>
+          <span class="map__banner-address-city">Санкт-Петербург</span>
         </address>
       </div>
-      <div class="map__frame"></div>
+      <picture>
+        <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop.webp">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp">
+        <source type="image/webp" srcset="img/map-mobile.webp">
+        <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg">
+        <source media="(min-width: 768px)" srcset="img/map-tablet.jpg">
+        <img class="map__image" src="img/map-mobile.jpg" width="280" height="362" alt="Наше местоположение.">
+      </picture>
+      <iframe class="map__frame"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253322!2d30.32085871595826!3d59.938716481876234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1680280165520!5m2!1sen!2sru"
+              style="border: 0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
     </div>
   </section>
 </main>

@@ -1,5 +1,6 @@
 .how-work {
   padding: 0 0 49px;
+  overflow-x: clip;
 
   @media (min-width: $tablet-width) {
     padding: 0 0 46px;
@@ -33,13 +34,17 @@
 
   @media (min-width: $tablet-width) {
     transform: translateX(1px);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    padding-right: 75px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     column-gap: 60px;
     row-gap: 37px;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 78px;
   }

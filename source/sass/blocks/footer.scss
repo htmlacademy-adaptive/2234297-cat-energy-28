@@ -86,10 +86,13 @@
 }
 
 .footer__copyright-link {
-  padding: 4px 0 0;
+  padding: 5px 0 0;
   width: 100%;
+  max-width: 280px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  column-gap: 10px;
   align-items: center;
   text-decoration: none;
   transition: all 0.2s ease;
@@ -104,6 +107,7 @@
 }
 
 .footer__copyright-text {
+  max-width: 140px;
   font-family: $main-font-2;
   font-size: 16px;
   line-height: 19px;
@@ -115,11 +119,16 @@
 }
 
 .footer__copyright-img {
+  flex-shrink: 0;
   color: $button-icon-color-2;
   transition: all 0.2s ease;
 }
 
 .footer__copyright-link:hover .footer__copyright-img {
+  color: $main-color-2;
+}
+
+.footer__copyright-link:focus-visible .footer__copyright-img {
   color: $main-color-2;
 }
 
