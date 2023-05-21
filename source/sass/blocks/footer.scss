@@ -54,7 +54,9 @@
   margin: 0;
   padding: 0 0 4px;
   width: fit-content;
+  max-width: 200px;
   display: flex;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -72,6 +74,10 @@
 }
 
 .footer__logo-link:hover .footer__logo-img {
+  color: #3e3e3e;
+}
+
+.footer__logo-link:focus-visible .footer__logo-img {
   color: #3e3e3e;
 }
 
@@ -139,6 +145,7 @@
 .footer__social-list {
   margin: 0;
   padding: 0;
+  max-width: 200px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -153,8 +160,9 @@
 }
 
 .footer__social-item-link {
-  padding: 4px 0;
+  padding: 5px 0 4px;
   display: flex;
+  flex-wrap: wrap;
   color: $button-icon-color-2;
   text-decoration: none;
 
@@ -168,6 +176,10 @@
 }
 
 .footer__social-item-link:hover svg {
+  color: $main-color-2;
+}
+
+.footer__social-item-link:focus-visible svg {
   color: $main-color-2;
 }
 

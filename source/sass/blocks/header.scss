@@ -18,6 +18,10 @@
     content: "";
   }
 
+  &--nojs::before {
+    display: none;
+  }
+
   &::after {
     position: absolute;
     z-index: 3;
@@ -49,12 +53,6 @@
 
   @media (min-width: $desktop-width) {
     padding: 53px 0 0;
-  }
-
-  &--nojs {
-    ::before {
-      display: none;
-    }
   }
 }
 
