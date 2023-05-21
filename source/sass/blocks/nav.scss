@@ -376,14 +376,12 @@
 
   &:hover::before {
     background-color: rgba($button-icon-color-1, 60%);
-    box-shadow: 0 8px 0 0 rgba($button-icon-color-1, 60%),
-    0 16px 0 0 rgba($button-icon-color-1, 60%);
+    box-shadow: 0 8px 0 0 rgba($button-icon-color-1, 60%), 0 16px 0 0 rgba($button-icon-color-1, 60%);
   }
 
   &:active::before {
     background-color: rgba($button-icon-color-1, 30%);
-    box-shadow: 0 8px 0 0 rgba($button-icon-color-1, 30%),
-    0 16px 0 0 rgba($button-icon-color-1, 30%);
+    box-shadow: 0 8px 0 0 rgba($button-icon-color-1, 30%), 0 16px 0 0 rgba($button-icon-color-1, 30%);
   }
 
   &::after {
