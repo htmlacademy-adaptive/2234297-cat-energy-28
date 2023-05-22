@@ -134,6 +134,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
     transform: translateY(2px);
     margin: 0;
     font-size: 20px;
@@ -141,6 +142,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: inherit;
     max-width: 180px;
     padding-top: 8px;
     margin-right: auto;
@@ -154,16 +156,25 @@
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
+    width: 100%;
     margin: 0;
     justify-content: flex-end;
     column-gap: 50px;
   }
 
   @media (min-width: $desktop-width) {
+    width: auto;
     margin-right: 40px;
     min-width: 32%;
-    width: 32%;
     justify-content: space-between;
+  }
+}
+
+.additional__property-item {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 }
 
@@ -184,6 +195,7 @@
     padding-top: 10px;
     min-width: 42px;
     max-width: 160px;
+    width: 131px;
   }
 
   &--price {
@@ -231,11 +243,18 @@
 }
 
 .additional__property-btn {
+  @include button;
+  margin-top: 12px;
   padding: 10px 20px;
   display: block;
   width: 100%;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 25px;
+  }
+
   @media (min-width: $desktop-width) {
+    margin-top: 0;
     transform: translateY(1px);
     width: 244px;
   }
