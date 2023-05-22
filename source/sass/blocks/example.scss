@@ -1,33 +1,17 @@
 .example {
-  padding: 25px 0 38px;
+  padding: 25px 0 40px;
   background-color: $example-background-color;
 
   @media (min-width: $tablet-width) {
     transform: translateX(1px);
     position: relative;
     padding: 43px 0 98px;
-    background-color: transparent;
-
-    &::before {
-      position: absolute;
-      transform: translateX(-1px);
-      top: 57%;
-      left: 0;
-      z-index: -1;
-      width: 100%;
-      height: 43%;
-      content: "";
-      background-color: $example-background-color;
-    }
+    background-image: linear-gradient($main-color-1 calc(57% + 3px), $example-background-color calc(57% + 3px));
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 0 75px;
-
-    &::before {
-      top: 23%;
-      height: 77%;
-    }
+    background-image: linear-gradient($main-color-1 23%, $example-background-color 23%);
   }
 }
 
@@ -80,9 +64,12 @@
 }
 
 .example__properties {
-  margin: 0 0 34px;
+  margin: 0 auto 34px;
   display: flex;
   justify-content: space-between;
+  max-width: 320px;
+  row-gap: 20px;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -115,14 +102,15 @@
   left: 0;
   right: 0;
   z-index: 0;
-  transform: translateX(-1px);
   width: 87px;
+  max-height: 28px;
   margin: 0 auto;
   padding: 0;
   font-family: $main-font-2;
   font-size: 12px;
   line-height: 12px;
   background-color: $example-background-color;
+  overflow-y: hidden;
   text-align: center;
 
   br {
@@ -133,6 +121,7 @@
 
   @media (min-width: $tablet-width) {
     top: calc(100% - 8px);
+    transform: translateX(0);
     padding: 0 9px 0 8px;
     width: fit-content;
     font-size: 14px;
@@ -141,7 +130,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: calc(100% - 6px);
+    top: calc(100% - 8px);
     background-color: $example-background-color;
   }
 }
@@ -150,6 +139,7 @@
   position: relative;
   z-index: 0;
   min-width: 124px;
+  max-width: 136px;
   min-height: 56px;
   padding: 13px 0;
   display: flex;
@@ -161,7 +151,12 @@
   @media (min-width: $tablet-width) {
     padding: 14px 0;
     min-width: 162px;
+    max-width: 220px;
     min-height: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 190px;
   }
 }
 
@@ -215,6 +210,16 @@
   @media (min-width: $tablet-width) {
     transform: translateX(-2px);
   }
+
+  @media (min-width: $desktop-width) {
+    transform: translateX(0);
+  }
+}
+
+.example__inner-subheading-num {
+  @media (min-width: $desktop-width) {
+    transform: translateX(2px);
+  }
 }
 
 .example__interactive {
@@ -223,10 +228,12 @@
   display: flex;
   width: fit-content;
   height: fit-content;
+  max-height: 256px;
   justify-content: center;
 
   @media (min-width: $tablet-width) {
     margin: 0 75px;
+    max-height: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -276,6 +283,7 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  transition: all 0.2s ease;
 
   &::before {
     position: absolute;
@@ -288,10 +296,15 @@
     background-color: $button-icon-color-2;
     border: none;
     border-radius: 2px;
+    transition: all 0.2s ease;
   }
 }
 
 .example__interactive-btn:hover::before {
+  background-color: $main-color-2;
+}
+
+.example__interactive-btn:focus::before {
   background-color: $main-color-2;
 }
 
@@ -308,6 +321,11 @@
 }
 
 .example__interactive-btn:hover svg {
+  color: $main-color-2;
+  stroke: $main-color-2;
+}
+
+.example__interactive-btn:focus svg {
   color: $main-color-2;
   stroke: $main-color-2;
 }

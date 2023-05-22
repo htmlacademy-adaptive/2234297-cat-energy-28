@@ -8,6 +8,32 @@
   }
 }
 
+@keyframes slideDown {
+  from {
+    transform: translateY(-200px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-200px);
+  }
+}
+
+.nav--opened .nav__menu {
+  animation-name: slideDown;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+
 .nav--nojs .nav__toggle {
   display: none;
 }
@@ -22,6 +48,7 @@
 
 .nav--nojs .nav__menu {
   position: static;
+  z-index: 3;
 }
 
 .nav__menu {
@@ -42,7 +69,7 @@
 
   @media (min-width: $tablet-width) {
     position: static;
-    max-width: 446px;
+    max-width: 466px;
     margin: 0;
     flex-direction: row;
     column-gap: 34px;
@@ -53,8 +80,18 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 560px;
-    column-gap: 32px;
+    transform: translate(-1px, 1px);
+    max-width: 582px;
+  }
+
+  &--form {
+    @media (min-width: $tablet-width) {
+      column-gap: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      column-gap: 34px;
+    }
   }
 }
 
@@ -66,6 +103,7 @@
 
   @media (min-width: $tablet-width) {
     width: fit-content;
+    max-width: 200px;
     padding: 0;
 
     &--catalog {
@@ -75,7 +113,17 @@
 
   @media (min-width: $desktop-width) {
     &--catalog {
-      margin: 0 0 0 5px;
+      margin: 0 0 0 3px;
+    }
+  }
+
+  &--index {
+    @media (min-width: $tablet-width) {
+      margin-right: 4px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: -2px;
     }
   }
 }
@@ -85,7 +133,7 @@
     position: absolute;
     top: calc(100% - 1px);
     left: -20px;
-    width: 100vw;
+    width: calc(100vw + 20px);
     height: 1px;
     background-color: $extra-color-1;
     content: "";
@@ -155,8 +203,10 @@
 .nav__menu-item-link {
   padding: 10px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   text-decoration: none;
+  transition: all 0.2s ease;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -164,16 +214,12 @@
 
     &--active::before {
       position: absolute;
-      top: 82%;
+      bottom: 8px;
       right: 0;
       width: 100%;
       height: 2px;
       content: "";
       background-color: $main-color-2;
-
-      @media (min-width: $desktop-width) {
-        top: 84%;
-      }
     }
   }
 
@@ -191,6 +237,10 @@
 }
 
 .nav__menu-item-link--index.nav__menu-item-link--active::before {
+  @media (min-width: $tablet-width) {
+    bottom: 6px;
+  }
+
   @media (min-width: $desktop-width) {
     background-color: $main-color-1;
   }
@@ -224,6 +274,7 @@
   position: absolute;
   top: 13px;
   right: 20px;
+  z-index: 3;
   margin: 0;
   padding: 0;
   width: 32px;
@@ -231,6 +282,12 @@
   background-color: $main-color-1;
   border: none;
   cursor: pointer;
+  transition: all 0.2s ease;
+
+  &::before,
+  ::after {
+    transition: all 0.2s ease;
+  }
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -245,6 +302,7 @@
     left: 8px;
     right: 0;
     bottom: 7px;
+    width: 24px;
     height: 1.5px;
     background-color: $button-icon-color-1;
     box-shadow: 0 8px 0 0 $button-icon-color-1, 0 16px 0 0 $button-icon-color-1;
@@ -291,5 +349,42 @@
   &:active::before,
   &:active::after {
     background-color: rgba($button-icon-color-1, 30%);
+  }
+}
+
+.nav--closing .nav__menu {
+  animation-name: slideUp;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.nav--closing .nav__toggle {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    right: 0;
+    bottom: 7px;
+    transform: rotate(0);
+    width: 24px;
+    height: 1.5px;
+    background-color: $button-icon-color-1;
+    box-shadow: 0 8px 0 0 $button-icon-color-1, 0 16px 0 0 $button-icon-color-1;
+  }
+
+  &:hover::before {
+    background-color: rgba($button-icon-color-1, 60%);
+    box-shadow: 0 8px 0 0 rgba($button-icon-color-1, 60%), 0 16px 0 0 rgba($button-icon-color-1, 60%);
+  }
+
+  &:active::before {
+    background-color: rgba($button-icon-color-1, 30%);
+    box-shadow: 0 8px 0 0 rgba($button-icon-color-1, 30%), 0 16px 0 0 rgba($button-icon-color-1, 30%);
+  }
+
+  &::after {
+    display: none;
   }
 }
