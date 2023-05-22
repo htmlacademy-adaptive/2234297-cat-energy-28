@@ -1,14 +1,14 @@
 .request {
   margin: 0;
-  padding: 27px 0 0;
+  padding: 27px 0 32px;
   overflow-x: clip;
 
   @media (min-width: $tablet-width) {
-    padding: 59px 0 0;
+    padding: 59px 0 72px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 72px 0 0;
+    padding: 72px 0 82px;
   }
 }
 
@@ -656,6 +656,9 @@
 }
 
 .request__form-btn-cont {
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr auto;
