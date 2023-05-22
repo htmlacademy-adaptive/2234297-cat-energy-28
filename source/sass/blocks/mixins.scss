@@ -1,0 +1,38 @@
+@mixin page-heading-style {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+@mixin heading-tablet {
+  font-size: 60px;
+  line-height: 60px;
+}
+
+@mixin text-tablet {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin button {
+  margin: 0;
+  font-family: $main-font-1;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: $main-color-2;
+  color: $main-color-1;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: $button-active-color-1;
+  }
+
+  &:active {
+    background-color: $button-active-color-1;
+    color: rgba($main-color-1, 0.3);
+  }
+}

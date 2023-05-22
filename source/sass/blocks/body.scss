@@ -1,0 +1,13 @@
+.body {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  font-family: $main-font-1;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: $main-color-1;
+  color: $text-color-1;
+}
