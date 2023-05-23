@@ -1,14 +1,14 @@
 // Начните писать стили здесь
 @import "settings.scss";
 @import "fonts.scss";
-@import "blocks/mixins.scss";
-@import "blocks/visually-hidden";
+@import "global.scss";
+@import "mixins.scss";
+@import "visually-hidden.scss";
 @import "blocks/body.scss";
 @import "blocks/container.scss";
 @import "blocks/example.scss";
 @import "blocks/footer.scss";
 @import "blocks/functions.scss";
-@import "blocks/global.scss";
 @import "blocks/header.scss";
 @import "blocks/how-work.scss";
 @import "blocks/main.scss";
@@ -21,4 +21,3 @@
 //catalog
 @import "blocks/catalog.scss";
 @import "blocks/additional.scss";
-@import "blocks/additional-gift.scss";

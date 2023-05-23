@@ -1,7 +1,11 @@
 let nav = document.querySelector('.nav');
 let navToggle = document.querySelector('.nav__toggle');
 let header = document.querySelector('.header');
+let mapNoJs = document.querySelector('.map__image');
+let mapFrame = document.querySelector('.map__frame');
 
+mapFrame.classList.remove('map__frame--nojs');
+mapNoJs.classList.remove('map__image--nojs');
 nav.classList.remove('nav--nojs');
 header.classList.remove('header--nojs');
 nav.classList.add('nav--closed');
