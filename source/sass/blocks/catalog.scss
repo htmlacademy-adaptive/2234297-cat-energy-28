@@ -267,17 +267,15 @@
 
   &--small-1 {
     @media (min-width: $tablet-width) {
-      margin-top: 28px;
       width: 161px;
-      height: 172px;
+      height: 200px;
     }
   }
 
   &--small-2 {
     @media (min-width: $tablet-width) {
-      margin-top: 26px;
       width: 163px;
-      height: 174px;
+      height: 200px;
     }
   }
 }
